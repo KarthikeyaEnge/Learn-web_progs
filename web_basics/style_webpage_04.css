@@ -1,0 +1,28 @@
+html{
+    font-family:'open-sans' ,sans-serif;
+}
+
+header{
+  background-color:teal;
+  color:powderblue;
+  text-align:center;
+  border-radius:5px;
+}
+
+main{
+  background-color:#336699;
+  border:2px solid black;
+  border-radius:7px;
+  text-align:center;
+
+}
+iframe{
+  border:none;
+}
+
+footer{
+  background-color:#006699;
+  color:white;
+  text-align:center;
+  border-radius:5px;
+}

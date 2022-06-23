@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+ <meta charset='utf-8'>
+ <meta name='author'content='karthikeya'>
+ <meta name='description' content='forms in html'>
+ <link rel='icon' href='icons8-html-5-96.png' type='image/x-icon'>
+ <link rel='stylesheet' href='style_webpage_03.css'>
+ <title>WEB FORMS</title>
+  </head>
+
+<body>
+
+     <header>
+       <h1> Forms In Web Page </h1>
+     </header>
+
+     <main>
+       <form automcomplete='on'>
+          <legend>PERSONAL INFO:</legend><br>
+          <label for='name'>Name:</label> <br><input type='text' id='name' name='name'><br>
+          <label for='roll'>Rollno:</label><br> <input type='text' id='roll' name='rollno'><br>
+          <label for='fname'>F.name:</label><br><input type='text' id='fname' name='fname'><br>
+          <label for='mname'>M.name:</label><br><input type='text' id='mname' name='mname'><br><br>
+
+          <label for='gen'>Gender:</label>
+            <label for='male'>Male</label><input type='radio' id='male' name='male'>
+            <label for='female'>Female</label><input type='radio' id='female' name='female'>
+            <label foe='other'>Other</label><input type='radio' id='other' name='other'><br><br>
+
+          <label for='branch'> Branch:</label>
+          <input list='branch'>
+            <datalist id='branch'>
+              <option value='CSE'>
+              <option value='ECE'>
+              <option value='IT'>
+              <option value='MECH'>
+              <option value='CIVIL'>
+              <option value='EEE'>
+            </datalist><br>   <br>
+
+          <label id='sec'>Section:</label>
+            <label id='A'>A</label><input type='checkbox' id='A'>
+            <label id='B'>B</label><input type='checkbox' id='B'>
+            <label id='C'>C</label><input type='checkbox' id='C'>
+            <label id='D'>D</label><input type='checkbox' id='D'>
+            <label id='E'>E</label><input type='checkbox' id='E'><br>
+
+          <label for='add'>Address:</label><br>
+          <textarea id='add' rows='10' cols='10'></textarea>
+          <br><br>
+
+          <input type='submit' id='submit'>
+         </form>
+       </main>
+
+
+       <footer>
+         <h2>&lt&lt &copy Karthikeya &gt&gt</h2>
+         </footer>
+
+
+  </body>
+
+</html>

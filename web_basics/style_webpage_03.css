@@ -1,0 +1,30 @@
+html{
+    font-family:'open-sans' ,sans-serif;
+}
+
+header{
+  background-color:teal;
+  color:white;
+  text-align:center;
+}
+
+main{
+  background-color:#006666;
+  border:2px solid black;
+  border-radius:7px;
+  text-align:center;
+
+}
+
+
+form{
+  background-color:#336699;
+  border:2px solid white;
+  border-radius:5px;
+}
+
+footer{
+  background-color:#006699;
+  color:white;
+  text-align:center;
+}
