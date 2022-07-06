@@ -1,0 +1,43 @@
+html{
+    padding: 20px;
+}
+
+
+body{
+    font-family:'open-sans',sans-serif;
+    background: papayawhip;
+    font-size: 2rem;
+}
+
+
+h1,h2{
+    font-size: 2rem;      /* as we can see using rem the font size is only dependent on root
+    font-size: 2em;      /*where as using (em) can change the senario where the font is dependent on it's higher component like h1 is dependent on main or body it takes givensize times its upper component size*/
+}
+p{
+    font-size: 1.5rem;
+}
+
+li{
+    font-size: 1.1rem;
+    font-family: fantasy;
+    
+}
+
+.top{
+    text-align: center;
+    border: 2px;
+    border-radius: 5px;
+    color: rgb(169, 169, 169);
+    width: 100%;
+}
+
+hr{
+   background:lightcoral;
+}
+
+
+footer{
+    text-align: center;
+    color:#cac7c7;
+}
