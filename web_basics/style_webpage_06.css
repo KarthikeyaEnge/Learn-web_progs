@@ -25,7 +25,7 @@ padding: 1.5em 2rem; /*you can see ,by adding the padding the distance between t
 
 .foot_container{          /*This is a class, I used it for footer*/
     border: 5px ridge #333;
-    font-family:'Fira code';
+    font-family:'Fira code',sans-serif;
     margin-left: 1.5rem;
     margin-right: 2rem;
    /*rather tan aboove cokde we can use margin:0rem 2rem 0rem 1.5rem*/
