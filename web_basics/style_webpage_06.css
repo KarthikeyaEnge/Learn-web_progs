@@ -32,3 +32,17 @@ padding: 1.5em 2rem; /*you can see ,by adding the padding the distance between t
 
     text-align: center;
 }
+
+
+/*The below given text is for text editing purpose can be used for any of the elements in html*/
+
+p{
+    /* letter-spacing:0.2rem;
+    line-height: 2rem; 
+    word-spacing:0.25rem;
+    text-transform: uppercase;
+    text-decoration:none; */
+
+    text-decoration: none;
+}
+
