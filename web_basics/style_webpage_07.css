@@ -49,10 +49,14 @@ abbr{
 }
 
 a{
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 
 }
+/*element:pseudoclass
+pseudo class refers to the current state and position of the element by referring to ther pseudo class we can change the way the element look at that particular state*/
+
+
 a:visited{
     color:rgb(68, 67, 67);
 }
@@ -60,6 +64,7 @@ a:visited{
 
 a:hover,a:focus{
     color:steelblue;
+    text-decoration: underline;
 }
 
 
