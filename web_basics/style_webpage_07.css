@@ -25,11 +25,11 @@
 }
 
 .foot_content{
-    background: #333;
+    background: hsl(2, 100%, 92%);
 }
 
 .foot_container{
-       background: #333;
+       background: hsl(2, 100%, 92%);
        font-size: 1.5rem;
        font-style: monospace;
        /* border: 7px ridge rgb(214, 49, 3); */
@@ -39,7 +39,7 @@
        margin:0rem 0rem;
       text-align: center;
       text-transform: capitalize;
-      color: aliceblue;
+      /* color: aliceblue; */
       opacity: 0.75;
 }
 
