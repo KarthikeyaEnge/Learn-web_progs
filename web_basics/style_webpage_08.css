@@ -34,6 +34,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: crimson;
+}
+
 a:active{
     color: crimson;
 }
@@ -55,6 +59,7 @@ li{
 
 li:hover{
     background-color: gold;
+    color: crimson;
     
 }
 
