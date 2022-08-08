@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'open-sans',sans-serif;
+}
+
+
+.head_container{
+      text-align: center;
+      background-color: #ffebcd;
+      padding: 2rem;
+      font-size: 1.5rem;
+}
+
+.main_container{
+    padding: 3rem;
+   font-size: 2rem;
+   columns:3 240px;
+   column-rule: 6px solid salmon;
+
+}
+
+.main_container p{
+    margin: 0;
+    padding: 0;
+}
+
+.main_container img{
+    height: 100px;
+    width: 100px;
+    float:left;
+     padding-right: 0.5rem;
+}
+
+.clear{
+    clear: both;
+    background-color: bisque;
+    border: 1px solid black;
+    display: flow-root;
+}
+
+.foot_container{
+    text-align: center;
+    background-color: darkolivegreen;
+    padding:2rem;
+    font-size: 1.5rem;
+}
