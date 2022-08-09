@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 200vh;
+    font-family: 'open-sans',sans-serif;
+    font-size: 1.5rem;
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    background-color: bisque;
+    color: black;
+    z-index: 1;             /*Z-index property is used for making the present container over top     while scrolling*/
+    top: 32rem;
+    text-align: center;
+}
+
+.absolute{
+    position: absolute;
+    width: 100%;
+    background-color: burlywood;
+    top: 0rem;
+    text-align: center;
+}
+
+.relative{
+    margin: 2rem 0rem;
+    position: relative;
+    width: 100%;
+    background-color: darksalmon;
+    text-align: center;
+}
+
+.sticky{
+    margin: 2rem 0rem;
+    position: sticky; 
+    width: 100%;
+    top:0;
+    background-color: chocolate;
+    text-align: center;
+}
+
+.fix{
+    position: fixed;
+    top: 35rem;
+    text-align: center;
+    background-color: aquamarine;
+    width: 100%;
+}
