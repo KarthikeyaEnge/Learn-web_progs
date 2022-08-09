@@ -20,6 +20,6 @@ Video courses:
 validation:[HTML Validator](https://validator.w3.org/nu/)
 Specificity:[Specificity calculator](https://specificity.keegan.st/)
 
-#  Keep Learning & Strive for Progress.
+###  Keep Learning & Strive for Progress.
 
 
