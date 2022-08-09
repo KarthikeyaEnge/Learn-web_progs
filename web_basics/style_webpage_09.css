@@ -13,8 +13,9 @@ body{
 }
 
 .head_img{
-    height: 70px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
+    float: left;
 }
 
 nav{
