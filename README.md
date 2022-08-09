@@ -7,7 +7,7 @@ web Documentation : [Mozilla Web Docs](https://developer.mozilla.org/en-US/)
 Browser: [Chrome](https://www.google.com/intl/en_in/chrome/)
 
 Editor: [VS code](https://code.visualstudio.com/)
-- vscode Extensions
+ >vscode Extensions
  - >[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
  - >[Git Hub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
  - >[Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
