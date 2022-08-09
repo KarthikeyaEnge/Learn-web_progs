@@ -18,8 +18,10 @@ Video courses:
 - [Dave Gray](https://www.youtube.com/c/DaveGrayTeachesCode)
 
 validation:[HTML Validator](https://validator.w3.org/nu/)
+
 Specificity:[Specificity calculator](https://specificity.keegan.st/)
 
+I used [Git](https://git-scm.com/) & [GitHub](https://github.com/)
 ###  Keep Learning & Strive for Progress.
 
 
