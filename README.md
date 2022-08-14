@@ -14,7 +14,7 @@ Editor: [VS code](https://code.visualstudio.com/)
  - >[HTML Snippets](https://marketplace.visualstudio.com/items?itemName=geyao.html-snippets)
 
 Video courses:
-- [CS50 Web Deveolp](https://cs50.harvard.edu/web/2020/)
+- [CS50 Web Develop](https://cs50.harvard.edu/web/2020/)
 - [Dave Gray](https://www.youtube.com/c/DaveGrayTeachesCode)
 
 validation:[HTML Validator](https://validator.w3.org/nu/)
@@ -22,6 +22,11 @@ validation:[HTML Validator](https://validator.w3.org/nu/)
 Specificity:[Specificity calculator](https://specificity.keegan.st/)
 
 I used [Git](https://git-scm.com/) & [GitHub](https://github.com/)
+
+For fun learning
+- [FlexFroggy](https://flexboxfroggy.com/) For learning flex
+Find more in [codepip](https://codepip.com/) 
+
 ###  Keep Learning & Strive for Progress.
 
 
