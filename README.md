@@ -17,7 +17,9 @@ Video courses:
 - [CS50 Web Develop](https://cs50.harvard.edu/web/2020/)
 - [Dave Gray](https://www.youtube.com/c/DaveGrayTeachesCode)
 
-validation:[HTML Validator](https://validator.w3.org/nu/)
+validation:
+- [HTML Validator](https://validator.w3.org/nu/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_upload+with_options)           
 
 Specificity:[Specificity calculator](https://specificity.keegan.st/)
 
