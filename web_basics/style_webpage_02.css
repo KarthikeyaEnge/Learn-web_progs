@@ -35,7 +35,7 @@ header{
 #menu ul{
 
   float:right;
-  tex-align:center;
+  text-align:center;
   background-color:#555;
 }
 
