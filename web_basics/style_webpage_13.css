@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bdy_contnr{
+    font-size: 2rem;
+    font-family: Manrope;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns:80% 1fr;
+    grid-template-rows: 100px repeat(5,20%);
+    gap: 2rem;
+    background-color: #333;
+}
+
+
+.hdr_contnr{
+   border:1px solid rgb(38, 205, 161);
+   border-radius: 10px;
+   display: flex;
+   grid-column: 1/span 2;
+   grid-row: 1/span 2;
+   justify-content: center;
+   align-items: center;
+   max-height: 100px;
+   background-color: aliceblue;
+}
+
+.mn_contnr{
+    display: flex;
+    border:1px solid rgb(38, 205, 161);
+    border-radius: 10px;
+    grid-row: 2/span 5;
+    grid-column: 1/span 1;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.asd_contnr{
+    border:1px solid rgb(38, 205, 161);
+    border-radius: 10px;
+    display: flex;
+    grid-row: 2/span 5;
+    grid-column:2/span 1 ;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.ft_contnr{
+  display: flex;
+  border:1px solid rgb(38, 205, 161);
+  border-radius: 10px;
+  grid-column: 1/span 2 ;
+  grid-row: 8/span 2;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  min-height: 100px;
+}
+
