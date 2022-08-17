@@ -1,5 +1,5 @@
 # web_progs
-Web Programs using HTML,CSS
+Web Programs using HTML ,CSS ,JavaScript, Django, python
 
 ## Here are all the resources. I used to learn...
 web Documentation : [Mozilla Web Docs](https://developer.mozilla.org/en-US/)
