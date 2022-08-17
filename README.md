@@ -14,6 +14,7 @@ Editor : [VS code](https://code.visualstudio.com/)
  - >[Git Hub Theme](https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme)
  - >[Git Lens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
  - >[HTML Snippets](https://marketplace.visualstudio.com/items?itemName=geyao.html-snippets)
+ - >[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 
 Video courses :
 - [CS50 Web Develop](https://cs50.harvard.edu/web/2020/)
@@ -27,10 +28,23 @@ Specificity : [Specificity calculator](https://specificity.keegan.st/)
 
 I used [Git](https://git-scm.com/) & [GitHub](https://github.com/)
 
-For fun learning
+For fun learning on css :
 - [FlexFroggy](https://flexboxfroggy.com/) For learning flex
-Find more in [codepip](https://codepip.com/) 
+Find more in [codepip](https://codepip.com/)
 
+That's for HTML, CSS.
+
+Use [Python](https://www.python.org/) for creating dynmnamic websites.
+
+Advanced Web FrameWork:[Django](https://www.djangoproject.com/)
+>It's a python external library used to built dynamic websites.
+
+Installing through pip use:
+'''
+  pip3 install django
+'''
+
+>Add it to your system & user path in environment variables.
 ###  Keep Learning & Strive for Progress.
 
 
