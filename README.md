@@ -32,7 +32,7 @@ For fun learning on css :
 - [FlexFroggy](https://flexboxfroggy.com/) For learning flex
 Find more in [codepip](https://codepip.com/)
 
-That's for HTML, CSS.
+That's for HTML, CSS.-------------------------------------------------->
 
 Use [Python](https://www.python.org/) for creating dynmnamic websites.
 
