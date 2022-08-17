@@ -34,7 +34,7 @@ Find more in [codepip](https://codepip.com/)
 
 That's for HTML, CSS.-------------------------------------------------->
 
-Use [Python](https://www.python.org/) for creating dynmnamic websites.
+Use [Python](https://www.python.org/) for creating dynamic websites.
 
 Advanced Web FrameWork:[Django](https://www.djangoproject.com/)
 >It's a python external library used to built dynamic websites.
