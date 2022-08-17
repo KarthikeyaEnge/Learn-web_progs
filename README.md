@@ -40,9 +40,9 @@ Advanced Web FrameWork:[Django](https://www.djangoproject.com/)
 >It's a python external library used to built dynamic websites.
 
 Installing through pip use:
-'''
+```
   pip3 install django
-'''
+```
 
 >Add it to your system & user path in environment variables.
 ###  Keep Learning & Strive for Progress.
