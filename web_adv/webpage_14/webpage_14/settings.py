@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'page1',
+    'page2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
