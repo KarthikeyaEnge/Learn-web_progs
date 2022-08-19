@@ -1,0 +1,13 @@
+{% extends 'page3/Layout.html'%}
+
+{% block body %}
+
+ <form action="{% url 'page3:add' %}" method="post">
+    {% csrf_token %}
+    {{form}}
+    <!-- <input type="text" value="add"> -->
+    <input type="submit">
+ </form>
+
+ <p>Submit To Redirect↩</p>
+{% endblock %}

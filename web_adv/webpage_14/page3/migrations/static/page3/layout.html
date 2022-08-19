@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Karthikeya">
+        <meta name="description" content="page refers to the django static files and conditions in django and template inheritance">
+        <title>Page2</title>
+        <link rel="icon" href="{%static 'page2/file_type_html_icon_130541.ico'%}" type="image/x-icon">
+        <link rel="stylesheet" href="{%static 'page2/style_date.css'%}">
+    </head>
+
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>

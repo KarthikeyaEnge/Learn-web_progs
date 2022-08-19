@@ -1,0 +1,14 @@
+{% extends 'page3/Layout.html' %}
+
+{%  block body %}
+  <h1> Anime List </h1>
+  <ul>
+  {% for  Anime in anime %}
+    <li>{{ Anime }}</li>
+  {% endfor %}
+  </ul>
+
+  <p>I guess, I only know these, Please add any if you more.. </p>
+  <a href="{% url 'page3:add' %}">Add Anime ↪</a>
+
+{% endblock %}

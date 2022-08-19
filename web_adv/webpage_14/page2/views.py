@@ -2,6 +2,7 @@ from django.shortcuts import render
 import datetime
 # Create your views here.
 date=datetime.datetime.now()
+anime=['Naruto', 'Blakclover', 'onepiece', 'Fairytail', 'Re:Zero']
 def index(request):
     return render(request,'page2/date.html',{
         "date":str(date.day)+'/'+str(date.month)+'/'+str(date.year)
