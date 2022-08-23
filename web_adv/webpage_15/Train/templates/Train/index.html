@@ -1,0 +1,12 @@
+{% extends 'Train/layout.html' %}
+
+
+{% block body %}
+
+<ul>
+    {% for train in trains%}
+    <li>{{train}}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
