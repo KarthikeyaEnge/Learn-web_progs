@@ -1,0 +1,9 @@
+{% extends 'Train/Layout.html' %}
+
+{% block body %}
+  <ul>
+  {% for stat in station%}
+     <li>{{stat}}</li>
+  {% endfor %}
+  </ul>
+{% endblock %}

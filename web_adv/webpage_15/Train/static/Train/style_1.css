@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+
+.head_container{
+    font-family: Aboreto;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #b3e904;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:whitesmoke;
+}
+
+.head_container ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.head_container li{
+    list-style-type: none;
+    padding-inline: 1.3rem;
+}
+
+.head_container a{
+    text-decoration: solid;
+    color: teal;
+
+}
+
+
+.head_container li:hover{
+    border:0.3px solid teal;
+    border-radius: 15px;
+    background-color: hsla(0, 2%, 69%, 0.3);
+}
+
+.head_container a:active{
+    color:hsl(180, 91%, 47%)
+}
+
+.main_container{
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    min-height: 90vh;
+}
+
+.main_container ul{
+    border:3px solid #b3e904;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: rgba(195, 186, 186, 0.474);
+}
+
+.main_container li{
+    list-style-type: none;
+    line-height: 2.5rem;
+    padding: 1.5rem;
+}
+
+.main_container input{
+    margin:1rem;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    font-family: inherit;
+}
+
+.foot_container{
+    padding: 2rem;
+    background-color: rgba(153, 151, 151, 0.471);
+    color: teal;
+    text-align: center;
+}

@@ -21,3 +21,15 @@ class train(models.Model):
 
     def __str__(self):
         return f"train {self.id} : {self.origin} to {self.destination} duration {self.duration} "
+
+
+class customer(models.Model):
+    first=models.CharField(max_length=64)
+    user=models.CharField(max_length=64,unique=True)
+    pa=models.CharField(max_length=8,unique=True)
+    dob=models.DateField()
+    g=models.CharField(max_length=10)
+    ph=models.IntegerField(unique=True)  
+
+    def __str__(self):
+        return f"username:{self.user}"     

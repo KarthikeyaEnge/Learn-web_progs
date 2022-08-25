@@ -1,0 +1,14 @@
+{% extends 'Train/Layout.html' %}
+
+{% block body %}
+
+  <form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Login">
+    <input type="reset" value="Reset">
+  </form>
+   
+  <p>Won't have an account? <a href="{%url 'train:signup'%}" style="text-decoration: none;">Create One</a></p>
+
+{% endblock %}

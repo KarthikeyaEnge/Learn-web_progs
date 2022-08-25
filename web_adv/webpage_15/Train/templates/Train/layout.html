@@ -8,12 +8,31 @@
         <meta name="author" content="Karthikeya">
         <meta name="description" content="project on Trains">
         <title>Trains</title>
-        <!-- <link rel="icon" href="{%static ''%}" type="image/x-icon"> -->
-        <link rel="stylesheet" href="{%static 'Train/style.css'%}">
+        <link rel="icon" href="{%static 'Train/train.ico'%}" type="image/x-icon">
+        <link rel="stylesheet" href="{%static 'Train/style_1.css'%}">
     </head>
 
     <body>
+        <header class="head_container">
+            <img src="{% static 'Train/train.png'%}" alt="Train" height="100px" width="100px">
+            <h2>RailRun</h2>
+            <ul>
+                <li><a href="{%url 'train:index' %}">Home</a></li>
+                <li><a href="{%url 'train:routes' %}">Routes</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <a href="{% url 'train:sign' %}"><img src="{% static 'Train/contact.png' %}" alt="contact" height="60px" width="60px"> </a>
+        </header>
+
+        <main class="main_container">
         {% block body %}
         {% endblock %}
+        </main>
+ 
+        <footer class="foot_container"> 
+           <h1>OUR PASSENGER SAFTEY IS OUR PRIORITY</h1>
+        </footer>  
+
     </body>
 </html>
