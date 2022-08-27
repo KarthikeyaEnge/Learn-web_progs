@@ -1,0 +1,60 @@
+{% extends 'Train/Layout.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{%static 'Train/style_1.css'%}">
+<style>
+  #err{
+    border: 0.2px solid rgb(241, 66, 66);
+    background-color: rgba(242, 87, 87, 0.696);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    max-width: 50%;
+    text-align: inherit;
+  }
+ 
+  #suc{
+    border: 0.2px solid rgb(59, 243, 50);
+    background-color: rgba(131, 242, 87, 0.696);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    max-width: 50%;
+    text-align: inherit;
+
+  }
+
+
+</style>
+{% endblock %}
+
+
+
+{% block body %}
+  <form action="" method="post">
+    {% csrf_token %}
+
+    Username: <input type="text" name="user" id="user"><br>
+    Password: <input type="password" name="pass" id="pass"><br>
+    Train: <select name="train" id="train" style="font-family:inherit; font-size:1.3rem">
+        {% for t in book %}
+        <option style="font-size: 1.3rem">{{t}}</option>
+        {% endfor %}
+    </select><br><br>
+    <input type="submit" value="Book" id="Book">
+    <input type="reset" value="Reset">
+
+    {% if msg %}
+    <p id="err">{{msg}}</p>
+   {% endif %}
+    
+   {% if msg_1 %}
+    <p id="suc">{{msg_1}}</p>
+   {% endif %}
+
+
+  </form>
+
+{% endblock %}
+

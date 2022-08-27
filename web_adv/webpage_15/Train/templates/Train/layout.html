@@ -7,9 +7,13 @@
         <meta charset="utf-8">
         <meta name="author" content="Karthikeya">
         <meta name="description" content="project on Trains">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Trains</title>
         <link rel="icon" href="{%static 'Train/train.ico'%}" type="image/x-icon">
-        <link rel="stylesheet" href="{%static 'Train/style_1.css'%}">
+        {% block content%}
+        <!-- <link rel="stylesheet" href="{%static 'Train/style_1.css'%}"> -->
+        {% endblock %}
     </head>
 
     <body>
@@ -19,8 +23,8 @@
             <ul>
                 <li><a href="{%url 'train:index' %}">Home</a></li>
                 <li><a href="{%url 'train:routes' %}">Routes</a></li>
-                <li><a href="#">Booking</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="{%url 'train:booking' %}">Booking</a></li>
+                <li><a href="{%url 'train:about'%}">About</a></li>
             </ul>
             <a href="{% url 'train:sign' %}"><img src="{% static 'Train/contact.png' %}" alt="contact" height="60px" width="60px"> </a>
         </header>

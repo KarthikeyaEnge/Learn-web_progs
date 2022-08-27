@@ -1,4 +1,9 @@
 {% extends 'Train/Layout.html' %}
+{% load static%}
+
+{% block content %}
+<link rel="stylesheet" href="{%static 'Train/signup.css'%}">
+{% endblock %}
 
 {% block body %}
   <form action="" method="post">

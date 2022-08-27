@@ -1,0 +1,17 @@
+{% extends 'Train/Layout.html'%}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{%static 'Train/style_1.css'%}">
+{% endblock %}
+
+{% block body%}
+<h1>{{user}}</h1>
+
+<h2>Bookings So Far...</h2>
+<ul>
+{% for book in booking %}
+  <li>{{book}}</li>
+{% endfor %}
+</ul>
+{% endblock %}

@@ -1,13 +1,34 @@
 {% extends 'Train/Layout.html' %}
+{% load static%}
+
+
+{% block content %}
+<link rel="stylesheet" href="{%static 'Train/style_1.css'%}">
+<style>
+  #err{
+    border: 0.2px solid rgb(241, 66, 66);
+    background-color: rgba(242, 87, 87, 0.696);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    max-width: 50%;
+    text-align: center;
+  }
+</style>
+{% endblock %}
 
 {% block body %}
 
-  <form action="" method="post">
+  <form action="{% url 'train:profile' %}" method="post">
     {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="Login">
     <input type="reset" value="Reset">
   </form>
+
+  {% if msg %}
+  <p id="err">{{msg}}</p>
+ {% endif %}
    
   <p>Won't have an account? <a href="{%url 'train:signup'%}" style="text-decoration: none;">Create One</a></p>
 

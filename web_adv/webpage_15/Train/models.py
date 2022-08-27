@@ -20,7 +20,7 @@ class train(models.Model):
     duration=models.IntegerField()
 
     def __str__(self):
-        return f"train {self.id} : {self.origin} to {self.destination} duration {self.duration} "
+        return f"train {self.id} : {self.origin} to {self.destination} duration {self.duration} Mins"
 
 
 class customer(models.Model):
@@ -33,3 +33,11 @@ class customer(models.Model):
 
     def __str__(self):
         return f"username:{self.user}"     
+
+
+class booking(models.Model):
+    user=models.ForeignKey(customer,on_delete=models.CASCADE,related_name='customer')
+    trn=models.CharField(max_length=64)
+
+    def __str__(self):
+        return f"Passenger : {self.user} Train : {self.trn}"
