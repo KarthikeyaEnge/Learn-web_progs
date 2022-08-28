@@ -6,6 +6,10 @@
    box-sizing: border-box;
 }
 
+body{
+    background-image: url('pattern.jpg');
+}
+
 
 .head_container{
     font-family: Aboreto;
@@ -79,7 +83,7 @@
 
 .foot_container{
     padding: 2rem;
-    background-color: rgba(153, 151, 151, 0.471);
+    background-color: rgba(153, 151, 151, 0.841);
     color: teal;
     text-align: center;
 }
