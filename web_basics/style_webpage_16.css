@@ -18,7 +18,7 @@ border-image-source: linear-gradient(to right,#7ccde9,#f18fa0) ;
 border-bottom-width: 2px;
 border-bottom-style: solid;
 border-image-slice:1.5;
-flex-shrink: 1;
+
 }
 
 body{
@@ -75,6 +75,7 @@ body{
     height: 100vh;
     font-family: Nunito;
     background-color: rgba(35, 32, 32, 0.701);
+    color: papayawhip;
 }
 
 .foot{
