@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head{
+display: flex;
+flex-flow:row reverse;
+justify-content: space-evenly;
+align-items: center;
+padding: 0.5rem;
+font-family: Nunito;
+font-size: 1.5rem;
+border-image-source: linear-gradient(to right,#7ccde9,#f18fa0) ;
+border-bottom-width: 2px;
+border-bottom-style: solid;
+border-image-slice:1.5;
+flex-shrink: 1;
+}
+
+body{
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.head ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.head li{
+    padding-inline: 1.5rem;
+    margin:0.5rem;
+    display: block;
+    position: relative;
+    text-shadow: 1px 1px 1px rgb(76, 74, 74);
+}
+
+.head ul ul{
+    position:absolute;
+    padding: 0;
+    left:0;
+    display: none;
+}
+
+.head a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.head ul li:hover {
+    border-radius: 15px;
+    background-image: linear-gradient(to right,#29c3f690,#fd32547c);
+}
+
+
+.head ul li:hover > ul{
+    display: block;
+    border-radius: 15px;
+    background-image: linear-gradient(to right,#29c3f690,#fd32547c);
+}
+
+
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Nunito;
+    background-color: rgba(35, 32, 32, 0.701);
+}
+
+.foot{
+    display: flex;
+    background: linear-gradient(to right,#29c3f690,#fd32547c);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 2rem;
+    font-family: Nunito;
+    color:rgb(246, 218, 218);
+}
+
+
+
+/*media queries will let us control the screen it's styling at a particular width etc;*/
+@media screen and (max-width:980px){
+    .head{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+   .main{
+    background-image: linear-gradient(to right,rgb(196, 190, 190),rgb(92, 248, 139))
+   }
+
+   .foot{
+    font-size: 1rem 
+   }
+
+}
+
+@media screen and (max-width:772px){
+    
+    .head{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .head ul{
+    display:none;
+   }
+
+   .main{
+    background-image: linear-gradient(to right,#333,rgb(104, 225, 247))
+   }
+
+   .foot{
+    font-size: 0.6rem 
+   }
+
+}
+
+
