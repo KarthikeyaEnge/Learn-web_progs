@@ -18,7 +18,9 @@ border-image-source: linear-gradient(to right,#7ccde9,#f18fa0) ;
 border-bottom-width: 2px;
 border-bottom-style: solid;
 border-image-slice:1.5;
-
+background-image: linear-gradient(to left,rgb(68, 68, 68),rgb(39, 38, 38),black);
+position: sticky;
+top: 0;
 }
 
 body{
@@ -97,6 +99,8 @@ body{
         display:flex;
         justify-content: center;
         align-items: center;
+        position: sticky;
+        top: 0;
     }
 
 
@@ -116,6 +120,8 @@ body{
         display:flex;
         justify-content: center;
         align-items: center;
+        position: sticky;
+        top: 0;
     }
 
    .head ul{

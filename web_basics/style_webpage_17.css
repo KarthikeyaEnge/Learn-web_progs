@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Nunito:wght@300;500&family=Philosopher&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+background-image: url('img/pattern.jpg');
+}
+
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Cinzel;
+    font-size: 2rem;
+    padding: 0.3rem;
+    background-image: linear-gradient(to right,#daa520,rgb(218, 137, 32),crimson);
+    position: sticky;
+    top:0;
+    border-bottom: 2px solid #333;
+}
+
+.head ul{
+    display: none;
+    list-style-type:none ;
+  /*   display: flex;
+    flex-flow: row wrap; */
+}
+
+.head ul li{
+    margin: 0.5rem;
+}
+
+
+.head ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Nunito;
+    font-size: 1.2rem;
+} 
+
+.main{
+    min-height: 100vh;
+   display: flex;
+   flex-flow: row wrap;
+   gap: 1.2rem;
+   padding: 2rem;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-width:350px;
+    background-image: linear-gradient(to right,#daa520,rgb(218, 137, 32),crimson);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.card img{
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 3rem;
+    border: 3px solid #333;
+
+}
+
+.card figure figcaption{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Philosopher;
+}
+
+
+
+.foot{
+    text-align: center;
+    font-family: Cinzel;
+    font-size: 1.7rem;
+    background-image:linear-gradient(to right,#daa520,rgb(218, 137, 32),crimson);
+    padding: 2rem;
+}
+
+
+@media screen  and (max-width:975px){
+    .head{
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    
+    .head ul{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .card{
+        min-width: 200px;
+        scroll-margin-top: 7rem;
+    }
+   
+    .foot{
+        font-size: 0.8rem;
+    }
+   
+}
+
+@media screen and (max-width:640px){
+
+    
+    .head{
+        position: sticky;
+        top: 0;
+    }
+    
+    .head h1{
+        display:none;
+    }
+    
+    .head ul{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .head ul li a{
+        font-size: 0.8rem;
+    }
+    .card{
+        min-width: 200px;
+        scroll-margin-top: 9.8rem;
+    }
+   
+    .foot{
+        font-size: 0.8rem;
+    }
+}
+
+
+
