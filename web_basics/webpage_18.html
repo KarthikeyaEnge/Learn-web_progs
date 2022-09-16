@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="karthikeya">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style_webpage_18.css">
+    <link rel="icon" href="img/yin-yang.png" type="image/x-icon">
+    <script src="code_webpage_18.js"></script>
+</head>
+<body>
+    <header>
+          <section class="head-title">
+              <img src="img/yin-yang.png" height="80px" width="80px">
+              <button class="menu_button">
+                <div class="menu"></div>
+                <nav>
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#calci">Calculator</a></li>
+                      <li><a href="#form">Form</a></li>
+                    </ul>
+                </nav>
+              </button>
+          </section>
+          <!-- <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+              </ul>
+          </nav> -->
+    </header>
+
+    <main>
+          <h1>Log_In Form</h1>
+          <section class="form_des">
+           <form action="" class="form_flex" id="form">
+            Name: <input type="text" name="usr" id="name">
+            Password: <input type="password" name="pass" id="pass">
+            <div class="buttons">
+             <input type="submit" value="Submit" onclick="valid()">
+             <input type="reset" value="Reset">
+            </div>
+            <output name="out" id="out" for="usr pass" value="0">Validation</output>
+           </form>
+        </section>
+              
+
+        <h1>Calculator</h1>
+          <section class="calc" id="calci">
+               <input type="text" name="exp" id="ex">
+                <button value="1" onclick="exp(1)">  1</button> 
+                <button value="2" onclick="exp(2)">  2</button> 
+                <button value="3" onclick="exp(3)">  3</button> 
+                <button value="+" onclick="exp('+')">+</button> 
+                <button value="4" onclick="exp(4)">  4</button> 
+                <button value="5" onclick="exp(5)">  5</button> 
+                <button value="6" onclick="exp(6)">  6</button> 
+                <button value="-" onclick="exp('-')">-</button> 
+                <button value="7" onclick="exp(7)">  7</button> 
+                <button value="8" onclick="exp(8)">  8</button> 
+                <button value="9" onclick="exp(9)">  9</button> 
+                <button value="✖" onclick="exp('*')">✖</button> 
+                <button value="0" onclick="exp(0)">  0</button> 
+                <button value="=" onclick="evaluation(document.getElementById('ex').value)">=</button> 
+                <button value="%" onclick="exp('%')">%</button> 
+                <button value="" onclick="remove()"> ↩ </button> 
+                
+
+          </section>
+
+
+    </main>
+
+   <footer>
+         <h2>KEEP LEARNING & STRIVE FOR PROGRESS</h2>
+    </footer>
+    
+</body>
+</html>
