@@ -281,7 +281,7 @@ main{
     display: flex;
     flex-flow: column nowrap;
     font-size: max(1rem,1.5rem);
-    width: max(220px,600px); 
+    width: max(220px,500px); 
     margin:1rem;
     font-family: var(--FONT_3);
     color: var(--FONT_COL1);
