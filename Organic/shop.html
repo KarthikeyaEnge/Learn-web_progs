@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="karthikeya">
+        <meta name="description" content="Triven organic shop">
+        <title>Triven Organics</title>
+        <link rel="stylesheet" href="signin.css">
+        <link rel="icon" href="img/leaf.png" type="image/x-icon">
+        <script async="false" src="shop.js"></script>
+    </head>
+<body>
+
+    <header id="shop_head">
+    <section class="head_sec">
+     <div class="title">
+        <img src="img/leaf.png" alt="leaf" height="80px" width="80px">
+         <h1 class="nowrap">TRIVEN ORGANICS</h1>
+    </div>
+
+    <nav class="navig">
+         <ul>
+            <li><a href="/web_progs/Organic">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">ACTIVITY</a></li>
+            <li><a href="#">ABOUT</a></li>
+         </ul>
+         <a href="signin.html"><img src="img/user.png" alt="user" ></a>
+    </nav>
+  
+    <button class="menu_bar">
+        <div class="menu">
+          <ul>
+            <li><a href="/web_progs/Organic/">HOME</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">ACTIVITY</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="signin.html">SIGNIN</a></li>
+         </ul>
+        </div>
+    </button>
+    </section>
+</header>
+    
+  <main>
+     
+    <section class="shop_menu">
+      <h1>Fruits</h1> 
+      <div class="nowrap">
+        <button class="scroll_l" onclick="scroll_left(0)"><img src="img/arrow_left.png" alt="left"></button>
+        <button class="scroll_r" onclick="scroll_right(0)"><img src="img/arrow_right.png" alt="right"></button>
+      </div>
+      <section class="scroll_menu">
+       <section class="shop_card">
+              <figure class="scard_img"><img src="img/apples.jpg" alt="apple"></figure>
+              <div class="card_wrap">
+              <article class="scard_info">
+                <h2>Apples /250g</h2>
+                    <div class="nowrap"><h3>MRP : </h3><P style="text-decoration:line-through;color: crimson;">₹60.00</P></div>
+                    <div class="nowrap"><h3>Sale : </h3><p>₹40.00(₹1.6/10g)</p></div>
+                    <p>Inclusive all taxes</p>
+              </article>
+               <div class="cart_men">
+                <button onclick="" class="adcrt">AddtoCart</button>
+                <div class="cart_btns">
+                    <button class="cart_bt"  ><img src="img/add.png" alt="add" onclick="quan_inc(0)"></button>
+                    <output name="out" for="shop_card" class="quan">0</output>
+                    <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(0)"></button>
+                    </div>
+                </div>
+               </div> 
+       </section>
+
+       <section class="shop_card">
+        <figure class="scard_img"><img src="img/mango.jpg" alt="apple"></figure>
+        <div class="card_wrap">
+        <article class="scard_info">
+          <h2>Mango /250g</h2>
+              <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹100.00</P></div>
+              <div class="nowrap"><h3>Sale:</h3><p>₹85.00(₹3.4/10g)</p></div>
+              <p>Inclusive all taxes</p>
+        </article>
+         <div class="cart_men">
+          <button onclick="" class="adcrt">AddtoCart</button>
+          <div class="cart_btns">
+              <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(1)"></button>
+              <output name="out" for="shop_card" class="quan">0</output>
+              <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(1)"></button>
+              </div>
+          </div>
+         </div>
+        </section>
+
+        <section class="shop_card">
+          <figure class="scard_img"><img src="img/strawberry.jpg" alt="apple"></figure>
+          <div class="card_wrap">
+          <article class="scard_info">
+            <h2>Strawberry /250g</h2>
+                <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹120.00</P></div>
+                <div class="nowrap"><h3>Sale:</h3><p>₹80.00(₹4.8/10g)</p></div>
+                <p>Inclusive all taxes</p>
+          </article>
+           <div class="cart_men">
+            <button onclick="" class="adcrt">AddtoCart</button>
+            <div class="cart_btns">
+                <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(2)"></button>
+                <output name="out" for="shop_card" class="quan">0</output>
+                <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(2)"></button>
+            </div>
+           </div>
+           </div>
+          </section>
+
+
+          <section class="shop_card">
+            <figure class="scard_img"><img src="img/pineapple.jpg" alt="apple"></figure>
+            <div class="card_wrap">
+            <article class="scard_info">
+              <h2>PineApple /250g</h2>
+                  <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹90.00</P></div>
+                  <div class="nowrap"><h3>Sale:</h3><p>₹70.00(₹2.8/10g)</p></div>
+                  <p>Inclusive all taxes</p>
+            </article>
+             <div class="cart_men">
+              <button onclick="" class="adcrt">AddtoCart</button>
+              <div class="cart_btns">
+                  <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(3)"></button>
+                  <output name="out" for="shop_card" class="quan">0</output>
+                  <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(3)"></button>
+                  </div>
+              </div>
+             </div>
+            </section>
+          <section class="shop_card">
+            <figure class="scard_img"><img src="img/grape.jpg" alt="apple"></figure>
+            <div class="card_wrap">
+            <article class="scard_info">
+              <h2>Grape /250g</h2>
+                  <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹180.00</P></div>
+                  <div class="nowrap"><h3>Sale:</h3><p>₹150.00(₹6/10g)</p></div>
+                  <p>Inclusive all taxes</p>
+            </article>
+             <div class="cart_men">
+              <button onclick="" class="adcrt">AddtoCart</button>
+              <div class="cart_btns">
+                  <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(4)"></button>
+                  <output name="out" for="shop_card" class="quan">0</output>
+                  <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(4)"></button>
+                  </div>
+              </div>
+             </div>
+            </section>
+          <section class="shop_card">
+            <figure class="scard_img"><img src="img/banana.jpg" alt="apple"></figure>
+            <div class="card_wrap">
+            <article class="scard_info">
+              <h2>Banana /250g</h2>
+                  <div class="nowrap"><h3>MRP : </h3><P style="text-decoration:line-through;color: crimson;">₹40.00</P></div>
+                  <div class="nowrap"><h3>Sale : </h3><p>₹25.00(₹1/10g)</p></div>
+                  <p>Inclusive all taxes</p>
+            </article>
+             <div class="cart_men">
+              <button onclick="" class="adcrt">AddtoCart</button>
+              <div class="cart_btns">
+                  <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(5)"></button>
+                  <output name="out" for="shop_card" class="quan">0</output>
+                  <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(5)"></button>
+              </div>
+             </div>
+             </div>
+            </section>
+
+
+      </section>   
+    </section>     
+
+    <section class="shop_menu">
+      <h1>Vegetables</h1> 
+      <div class="nowrap">
+        <button class="scroll_l" onclick="scroll_left(1)"><img src="img/arrow_left.png" alt="left"></button>
+        <button class="scroll_r" onclick="scroll_right(1)"><img src="img/arrow_right.png" alt="right"></button>
+      </div>
+      <section class="scroll_menu">
+       <section class="shop_card">
+              <figure class="scard_img"><img src="img/tomato.jpg" alt="apple"></figure>
+              <div class="card_wrap">
+              <article class="scard_info">
+                <h2>Tomato /250g</h2>
+                    <div class="nowrap"><h3>MRP : </h3><P style="text-decoration:line-through;color: crimson;">₹60.00</P></div>
+                    <div class="nowrap"><h3>Sale : </h3><p>₹40.00(₹1.6/10g)</p></div>
+                    <p>Inclusive all taxes</p>
+              </article>
+               <div class="cart_men">
+                <button onclick="" class="adcrt">AddtoCart</button>
+                <div class="cart_btns">
+                    <button class="cart_bt"  ><img src="img/add.png" alt="add" onclick="quan_inc(6)"></button>
+                    <output name="out" for="shop_card" class="quan">0</output>
+                    <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(6)"></button>
+                </div>
+               </div> 
+               </div>
+       </section>
+
+       <section class="shop_card">
+        <figure class="scard_img"><img src="img/carrot.jpg" alt="apple"></figure>
+        <div class="card_wrap">
+        <article class="scard_info">
+          <h2>Carrot /250g</h2>
+              <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹100.00</P></div>
+              <div class="nowrap"><h3>Sale:</h3><p>₹85.00(₹3.4/10g)</p></div>
+              <p>Inclusive all taxes</p>
+        </article>
+         <div class="cart_men">
+          <button onclick="" class="adcrt">AddtoCart</button>
+          <div class="cart_btns">
+              <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(7)"></button>
+              <output name="out" for="shop_card" class="quan">0</output>
+              <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(7)"></button>
+          </div>
+         </div>
+         </div>
+        </section>
+
+        <section class="shop_card">
+          <figure class="scard_img"><img src="img/cabbage.jpg" alt="apple"></figure>
+          <div class="card_wrap">
+          <article class="scard_info">
+            <h2>Cabbage /250g</h2>
+                <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹120.00</P></div>
+                <div class="nowrap"><h3>Sale:</h3><p>₹80.00(₹4.8/10g)</p></div>
+                <p>Inclusive all taxes</p>
+          </article>
+           <div class="cart_men">
+            <button onclick="" class="adcrt">AddtoCart</button>
+            <div class="cart_btns">
+                <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(8)"></button>
+                <output name="out" for="shop_card" class="quan">0</output>
+                <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(8)"></button>
+            </div>
+           </div>
+           </div>
+          </section>
+
+
+          <section class="shop_card">
+            <figure class="scard_img"><img src="img/potato.jpg" alt="apple"></figure>
+            <div class="card_wrap">
+            <article class="scard_info">
+              <h2>Potato /250g</h2>
+                  <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹90.00</P></div>
+                  <div class="nowrap"><h3>Sale:</h3><p>₹70.00(₹2.8/10g)</p></div>
+                  <p>Inclusive all taxes</p>
+            </article>
+             <div class="cart_men">
+              <button onclick="" class="adcrt">AddtoCart</button>
+              <div class="cart_btns">
+                  <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(9)"></button>
+                  <output name="out" for="shop_card" class="quan">0</output>
+                  <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(9)"></button>
+              </div>
+             </div>
+            </div>
+            </section>
+          <section class="shop_card">
+            <figure class="scard_img"><img src="img/brocolli.jpg" alt="apple"></figure>
+            <div class="card_wrap">
+            <article class="scard_info">
+              <h2>Brocolli /250g</h2>
+                  <div class="nowrap"><h3>MRP:</h3><P style="text-decoration:line-through;color: crimson;">₹180.00</P></div>
+                  <div class="nowrap"><h3>Sale:</h3><p>₹150.00(₹6/10g)</p></div>
+                  <p>Inclusive all taxes</p>
+            </article>
+             <div class="cart_men">
+              <button onclick="" class="adcrt">AddtoCart</button>
+              <div class="cart_btns">
+                  <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(10)"></button>
+                  <output name="out" for="shop_card" class="quan">0</output>
+                  <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(10)"></button>
+              </div>
+             </div>
+             </div>
+            </section>
+          <section class="shop_card">
+            <figure class="scard_img"><img src="img/capsicum.jpg" alt="apple"></figure>
+            <div class="card_wrap">
+            <article class="scard_info">
+              <h2>capsicum /250g</h2>
+                  <div class="nowrap"><h3>MRP : </h3><P style="text-decoration:line-through;color: crimson;">₹40.00</P></div>
+                  <div class="nowrap"><h3>Sale : </h3><p>₹25.00(₹1/10g)</p></div>
+                  <p>Inclusive all taxes</p>
+            </article>
+             <div class="cart_men">
+              <button onclick="" class="adcrt">AddtoCart</button>
+              <div class="cart_btns">
+                  <button class="cart_bt"><img src="img/add.png" alt="add" onclick="quan_inc(11)"></button>
+                  <output name="out" for="shop_card" class="quan">0</output>
+                  <button class="cart_bt"><img src="img/cancel.png" alt="add" onclick="quan_dec(11)"></button>
+              </div>
+             </div>
+             </div>
+            </section>
+
+
+      </section>   
+    </section>     
+
+  </main>
+
+  
+  <footer>
+    <h2 class="nowrap">SAY ORGANIC <div style="color:crimson;text-decoration:line-through;"> Fertilizers</div></h2>
+  </footer>
+
+
+</body>
+</html>

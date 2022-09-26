@@ -19,12 +19,27 @@
    /*color*/
     --FONT_COL1:whitesmoke;
     --BOD-COL:rgb(22, 231, 22);
-    --LIN-GRAD:linear-gradient(180deg,#001533 65%,#0015337b);
+    --LIN-GRAD:linear-gradient(180deg,#001533c9 45%,rgba(0, 21, 51, 0.608),rgba(0, 21, 51, 0.482));
     --LIN-GRAD2:linear-gradient(45deg,rgba(30, 247, 30, 0.637),rgb(33, 244, 33));
+    --LIN-GRAD3:linear-gradient(to right,rgba(47, 246, 47, 0.518),rgba(51, 241, 51, 0.337));
     --BOD_COL2:rgba(24, 52, 119, 0.611);
     --BOD_COL3:#001533;
 
 }
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--BOD_COL3);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--BOD-COL);
+    border-radius: 10rem;
+}
+
 .nowrap{
     display:flex;
     justify-content:center;
@@ -37,7 +52,7 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 4px solid var(--BOD-COL);
-    height:59vh;
+    height:min(32vh,59vh);
     overflow: hidden;
 
 }
@@ -215,7 +230,7 @@ header{
  }
  
  .menu ul li:hover{
-     background-image: var(--LIN-GRAD);
+     background-image: var(--LIN-GRAD2);
      color: var(--BOD_COL2);
  }
  
@@ -263,12 +278,14 @@ header{
     display: flex;
     flex-flow: column nowrap;
     border: 2px solid var(--ALT-COLOR);
-    border-radius: 5px;
+    border-radius: 15px;
     width: 300px;
-    height: 300px;
+    height: max(400px,auto);
     scroll-margin-top:150px ;
     background-image: var(--LIN-GRAD2);
+    box-shadow: 0 0 20px var(--BOD_COL3)inset;
     margin:5rem 1rem;
+    align-items: center;
 
 }
 
@@ -280,15 +297,17 @@ header{
     display: flex;
     flex-flow: column nowrap;
     padding: 2rem;
+    font-size: 1.2rem;
 }
 
-.form_flex input[type='text'],input[type='password'],#out {
+.form_flex input[type='text'],input[type='password'],#out,#email,#age {
     background-color: var(--BOD_COL3);
     border: 0.3px solid var(--BOD_COL3);
     border-radius: 20px;
     color: var(--BOD-COL);
     padding: 0.3rem;
     text-align: center;
+    margin-bottom: 2rem;
 }
 .buttons{
     display: flex;
@@ -312,6 +331,29 @@ header{
     box-shadow: 0px 2px 2px 2px var(--ALT-COLOR);
     
 }
+#create{
+    border: none;
+    background-color: transparent;
+    color: var(--BOD-COL3);
+    margin: 0.3rem;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#oname,#opass{
+    margin: 1rem 0rem;
+    display: none;
+    color: crimson;
+}
+
+#signup{
+    display: none;
+}
+
+input[type='radio']{
+    background-color: transparent;
+    margin-inline: 0.2rem;
+}
 
 /*<-------------- main end------------------->*/
 
@@ -324,5 +366,221 @@ footer{
     background: var(--BOD-COL);
     color: var(--FONT_COL1);
     padding: 2rem;
+}
+
+/*<--------------style for shop⬇️----------------->*/
+
+#shop_head{
+    background-image: url('img/grocery.jpg');
+    background-size: cover;
+    background-position-y: center;
+}
+
+
+.shop_menu{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+.scroll_menu{
+  display: flex;
+  width: 90vw;
+  height: auto;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin-top: 0.5rem;
+
+  border-left: 3px solid var(--BOD-COL) ;
+  border-right: 3px solid var(--BOD-COL) ;
+
+}
+
+
+
+
+.scroll_l,.scroll_r{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    margin-inline:3rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px var(--BOD-COL);
+}
+
+.scroll_l:active,.scroll_r:active{
+    box-shadow: 0px 0px 5px var(--BOD_COL3) inset;
+}
+
+:is(.scroll_l,.scroll_r) img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+ .shop_menu h1{
+    font-size: 2rem;
+    color: var(--BOD-COL);
+    text-decoration: underline;
+
+}
+.scroll_menu::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.shop_card{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 0px 20px var(--BOD-COL);
+    position: relative;
+    margin:1rem 2rem;
+    width: 25vw;
+    height: auto;
+    color: var(--FONT_COL1);
+    border-radius: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0px 0px 10px var(--BOD-COL) ;
+}
+
+.shop_card:hover{
+    animation: enlarge 0.5s ease-in-out 0.1s normal forwards;
+}
+
+.card_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    flex-flow: row wrap;
+}
+
+.scard_img{
+    position: relative;
+    width: max(400px,60%);
+    height: auto;
+    border-radius: 20px;
+}
+
+.scard_img img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.scard_info{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    z-index: 2;
+}
+
+.cart_btns{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+}
+.cart_men{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-inline: 1rem;
+}
+
+.adcrt{
+    background: var(--BOD-COL);
+    color: var(--BOD_COL3);
+    font-family: inherit;
+    border:none;
+    padding:0.2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px var(--BOD-COL);
+}
+
+
+.cart_bt{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    margin-inline: 0.2rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px var(--BOD-COL);
+}
+
+.adcrt:active,.cart_bt:active{
+    box-shadow: 0px 0px 5px var(--BOD_COL3) inset;
+}
+
+.cart_bt img{
+    display: block;
+    width:100%;
+    height: min(auto,400px);
+}
+
+@media screen and (max-width:1499px) {
+    .card_wrap{
+        flex-flow: row wrap;
+        align-self: center;
+    }
+
+}
+
+ @media screen and (max-width:768px) {
+    .scard_img img{
+        width:min(420px,800px);
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:819px) {
+     .shop_card{
+        width: 80vw;
+     }
+
+}
+
+
+@media screen and (max-width:387px) {
+     .shop_card{
+        justify-content: center;
+        align-items: center;
+     }
+
+}
+
+
+
+@media screen and (max-width:357px) {
+    .menu ul{
+        left: 4vmin;
+    }
+
+} 
+
+@keyframes enlarge {
+ 
+    100%{
+        
+        box-shadow: 0px 0px 25px var(--BOD-COL);
+    }
 }
 

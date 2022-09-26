@@ -9,6 +9,7 @@
     <title>Triven Organics</title>
     <link rel="stylesheet" href="signin.css">
     <link rel="icon" href="img/leaf.png" type="image/x-icon">
+    <script defer src="signin.js"></script>
 </head>
 <body>
     <header>
@@ -21,21 +22,21 @@
 
     <nav class="navig">
          <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="/web_progs/Organic">HOME</a></li>
             <li><a href="#">SERVICES</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li><a href="shop.html">SHOP</a></li>
             <li><a href="#">ACTIVITY</a></li>
             <li><a href="#">ABOUT</a></li>
          </ul>
-         <a href=""><img src="img/user.png" alt="user" ></a>
+         <a href="signin.html"><img src="img/user.png" alt="user" ></a>
     </nav>
   
     <button class="menu_bar">
         <div class="menu">
           <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="/Organic">HOME</a></li>
             <li><a href="#">SERVICES</a></li>
-            <li><a href="#">SHOP</a></li>
+            <li><a href="shop.html">SHOP</a></li>
             <li><a href="#">ACTIVITY</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="signin.html">SIGNIN</a></li>
@@ -46,16 +47,41 @@
 </header>
  
       <main>
-        <section class="form_des">
+        <section class="form_des" id="signin">
             <form action="" class="form_flex" id="form" action="/">
-             Name: <input type="text" name="usr" id="name" required>
+             UserName: <input type="text" name="usr" id="name" required>
+                   <p id="oname">Capitalize[ex:Alexa,John] </p>
              Password: <input type="password" name="pass" id="pass" maxlength="18" required >
+                   <p id="opass">use special,words,digits characters</p>
              <div class="buttons">
               <input type="submit" value="Submit" onclick="valid()">
               <input type="reset" value="Reset">
              </div>
             </form>
+            Not Have An Account? <button onclick="change_s()" id="create">create</button>
          </section>
+
+
+         <section class="form_des" id="signup">
+          <form action="" class="form_flex" id="form" action="/">
+           Name: <input type="text" name="uname" required>
+           Age: <input type="number" name="age" id="age" required>
+           Email: <input type="email" name="email" id="email" required>
+           <div class="nowrap">
+            Gender: M<input type="radio" name="gen" value="M" class="gen">
+                   G<input type="radio" name="gen" value="G" class="gen">
+                   O<input type="radio" name="gen" value="O" class="gen">
+           </div>
+           UserName: <input type="text" name="usr" id="name" required>
+                 <p id="oname">Capitalize[ex:Alexa,John]</p>
+           Password: <input type="password" name="pass" id="pass" maxlength="18" required >
+                 <p id="opass">use special,words,digits characters</p>
+           <div class="buttons">
+            <input type="submit" value="Submit" onclick="valid()">
+            <input type="reset" value="Reset">
+           </div>
+          </form>
+       </section>
  
       </main>
 

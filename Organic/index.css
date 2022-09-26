@@ -25,6 +25,19 @@
 
 }
 
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--BOD_COL3);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--BOD-COL);
+    border-radius: 10rem;
+}
+
 header{
     display: flex;
     position: relative;
@@ -86,6 +99,7 @@ header video{
    font-family: var(--FONT_1);
    color: var(--FONT_COL1);
    padding: 2px;
+   text-shadow: 2px 2px 2px var(--BOD_COL3);
 }
 
 .navig{
@@ -258,7 +272,7 @@ main{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0px  10px var(--BOD-COL) inset;
+    box-shadow: 0px 0px  20px var(--BOD-COL) inset;
     border-radius: 30px;
     overflow: hidden;
     width: 90vw;
@@ -290,4 +304,15 @@ main{
 
 .card_scr h2{
     color: var(--BOD-COL);
+}
+
+footer{
+    font-family: var(--FONT_4);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background: var(--BOD-COL);
+    color: var(--FONT_COL1);
+    padding: 2rem;
 }
