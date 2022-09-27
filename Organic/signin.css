@@ -24,6 +24,7 @@
     --LIN-GRAD3:linear-gradient(to right,rgba(47, 246, 47, 0.518),rgba(51, 241, 51, 0.337));
     --BOD_COL2:rgba(24, 52, 119, 0.611);
     --BOD_COL3:#001533;
+    --TRANS-BODCOL:rgba(0, 21, 51, 0.775);
 
 }
 
@@ -582,5 +583,98 @@ footer{
         
         box-shadow: 0px 0px 25px var(--BOD-COL);
     }
+}
+
+/*<----------------sevice css------------------->*/
+
+#serv_head{
+    background-image: url('img/service.jpg');
+    background-position-y:center ;
+    background-size: cover;
+}
+
+
+.serv_slide{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    height: auto;
+    margin: 1rem;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px var(--BOD-COL);
+}
+
+.serv_slide::-webkit-scrollbar{
+    display: none;
+}
+
+.serv_card{
+    width: 100%;
+    flex-shrink: 0;
+    height: 70vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.servscr_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: baseline;
+    padding: 1rem;
+}
+
+.servscr_btn button{
+    background-color: var(--TRANS-BODCOL);
+    border: none;
+    border-radius: 50%;
+    height:50px;
+    width: 50px;
+}
+
+.servscr_btn button:hover{
+    background-color: var(--BOD_COL3);
+}
+
+.servscr_btn img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+#serv_1{
+    background-image: url('img/edufarm.jpg');
+    background-size: cover;
+    background-position:center ;
+    
+}
+#serv_2{
+    background-image: url('img/research.jpg');
+    background-size: cover;
+    background-position:center ;
+}
+
+#serv_3{
+    background-image: url('img/grocery.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.serv_info{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--TRANS-BODCOL);
+    color: var(--FONT_COL1);
+    width: 80%;
+    align-self: center;
+    bottom: 0;
+    margin-top: min(3rem,5rem);
+    border-radius: 20px;
+    padding:1rem;
 }
 
