@@ -290,9 +290,7 @@ header{
 
 }
 
-.form_des:hover{
-    box-shadow: 0 2px 2px 2px var();
-}
+
 
 .form_flex{
     display: flex;
