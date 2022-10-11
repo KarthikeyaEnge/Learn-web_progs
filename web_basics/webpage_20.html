@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific calculator</title>
+    <meta name="author" content="karthikeya"> 
+    <meta name="description" content="a scientific calculator">
+    <link rel="stylesheet" href="style_webpage_20.css">
+    <link rel="icon" href="file_type_html_icon_130541.ico" type="image/x-icon">
+    <script defer src="code_webpage_20.js"></script>
+</head>
+<body>
+      
+    <header>
+       <h1>Scientific calculator</h1>
+    </header>
+
+    <main>
+        <section class="calci">
+        <input type="text" id="ex" class="cal_in">
+          <section class="cal_btns">
+            <button onclick="exp('sin(')">sin</button>
+            <button onclick="exp('cos(')">cos</button>
+            <button onclick="exp('tan(')">tan</button>
+            <button onclick="exp('deg(')">deg</button>
+            <button onclick="exp('rad(')">rad</button>
+            <button onclick="exp('asin(')">sin <sup> -1</sup> </button>
+            <button onclick="exp('acos(')">cos <sup> -1</sup> </button>
+            <button onclick="exp('atan(')">tan <sup> -1</sup> </button>
+            <button onclick="exp('pow(')">x <sup> y </sup></button>
+            <button onclick="exp('')">x <sup> 2 </sup></button>
+            <button onclick="exp('pow(e, )')">e <sup> x </sup></button>
+            <button onclick="exp('pow(10, )')">10<sup> x </sup></button>
+            <button onclick="exp('sqrt(')">√x</button>
+            <button onclick="exp('log(')">log</button>
+            <button onclick="exp('(')">(</button>
+            <button onclick="exp(')')">)</button>
+            <button onclick="exp('')">1/x</button>
+            <button onclick="exp('%')">%</button>
+            <button onclick="exp('fac(')">n!</button>
+            <button onclick="exp(1)">  1</button> 
+            <button onclick="exp(2)">  2</button> 
+            <button onclick="exp(3)">  3</button> 
+            <button onclick="exp('+')">+</button> 
+            <button onclick="exp(4)">  4</button> 
+            <button onclick="exp(5)">  5</button> 
+            <button onclick="exp(6)">  6</button> 
+            <button onclick="exp('-')">-</button> 
+            <button onclick="exp(7)">  7</button> 
+            <button onclick="exp(8)">  8</button> 
+            <button onclick="exp(9)">  9</button> 
+            <button onclick="exp('*')">✖</button> 
+            <button onclick="exp(0)">  0</button> 
+            <button onclick="evaluation(document.getElementById('ex').value)">=</button> 
+            <button onclick="exp('%')">%</button> 
+            <button onclick="rem()"> ↩ </button>
+            <button onclick="clean()"> CE </button>
+
+          </section>
+        </section>  
+    </main>
+
+    <footer>
+        <h1>Keep learning & strive for progress</h1>
+    </footer>
+</body>
+</html>

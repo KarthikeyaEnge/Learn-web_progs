@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ALT_COL:rgb(255, 144, 39);
+    --MAIN_COL:rgb(18, 18, 31);
+}
+
+main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: nunito;
+   background-color: var(--MAIN_COL); 
+   color: var(--ALT_COL);
+   font-size: 1.3rem;
+}
+
+header,footer{
+    font-family: nunito;
+    text-align: center;
+    background-color: var(--ALT_COL);
+    color: var(--MAIN_COL);
+    padding: 2rem;
+}
+
+.calci{
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: 0.3fr 1fr;
+  width:min(50vw,80vw);
+  height: auto;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cal_in{
+    grid-column: 0/1;
+    height: 3rem;
+    border-radius: 20px;
+    border-color: var(--ALT_COL);
+    background-color: black;
+    color: var(--ALT_COL);
+    padding-inline: 1.5rem;
+}
+
+.cal_btns{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: inherit;
+    color: inherit;
+}
+
+.cal_btns button{
+    height: 4rem;
+    width: 4rem;
+    flex-shrink: 1;
+    background-color: var(--ALT_COL);
+    border-radius: 20%;
+    font-size: inherit;
+}
+
+.cal_btns button:active{
+    box-shadow: 0px 2px 2px 2px var(--MAIN_COL) inset;
+}
+
+@media screen and (max-width:700px) {
+    .calci{
+        width: 90vw;
+    }
+    .cal_btns{
+        gap:0.5rem;
+    }
+
+}
