@@ -3,8 +3,10 @@ Web Programs using  HTML ,CSS , JAVASCRIPT, DJANGO, PYTHON
 
 |        Languages       | 
 |       :-------------:      |
-|![Html](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=HTML5&logoColor=white) ![css](https://img.shields.io/badge/css-blue?style=for-the-badge&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=yellow) ![Django](https://img.shields.io/badge/Django-teal?style=for-the-badge&logo=django&logoColor=white) ![python](https://img.shields.io/badge/python-lightblue?style=for-the-badge&logo=python&logoColor=blue)|
+|![Html](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=HTML5&logoColor=white) ![css](https://img.shields.io/badge/css-blue?style=for-the-badge&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-323330?style=for-the-badge&logo=javascript&logoColor=yellow)  ![python](https://img.shields.io/badge/python-lightblue?style=for-the-badge&logo=python&logoColor=blue)|
 
+|Frameworks|![Django](https://img.shields.io/badge/Django-teal?style=for-the-badge&logo=django&logoColor=white)|
+|    :----------:    |     :----------:|
 
  ![license](https://img.shields.io/github/license/karthikeyaEnge/web_progs)
  ![codesize](https://img.shields.io/github/languages/code-size/karthikeyaEnge/web_progs)
