@@ -339,7 +339,7 @@ header{
     text-decoration: underline;
     cursor: pointer;
 }
-#oname,#opass{
+#oname,#opass,#ropass,#roname{
     margin: 1rem 0rem;
     display: none;
     color: crimson;
