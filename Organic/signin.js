@@ -1,10 +1,11 @@
 
-document.getElementById('name').addEventListener("input",(event)=>{
+document.querySelector('#name , #uname').addEventListener("input",(event)=>{
     let u=document.getElementById('name').value;
+    let ru=document.getElementById('uname').value;
     let uregex=/([A-Z]{1})(\w{5,20})/;
-    const un=document.querySelector('#oname');
+    const un=document.querySelector('#oname , #roname');
    
-    if(!uregex.test(u) && u.length>0){
+    if((!uregex.test(u) && u.length>0) || (!uregex.test(ru) && ru.length>0)){
         
         un.style.display='block';
     }
@@ -15,10 +16,10 @@ document.getElementById('name').addEventListener("input",(event)=>{
     }
 });
 
-document.getElementById('pass').addEventListener("input",(event)=>{
+document.querySelector('#pass,#rpass').addEventListener("input",(event)=>{
     let p=document.getElementById('pass').value;
     let pregex=/[\w@#$%&]{8,24}/;
-    const pn=document.querySelector('#opass');
+    const pn=document.querySelector('#opass , #ropass');
 
     if(!pregex.test(p)&& p.length>0){
         
